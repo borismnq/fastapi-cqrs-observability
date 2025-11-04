@@ -1,0 +1,20 @@
+# Development and Testing Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Include production dependencies
+-r requirements.txt
+
+# Load Testing
+locust==2.20.0
+
+# Code Quality
+black==25.9.0
+isort==6.1.0
+mypy==1.18.2
+
+# pytest==8.4.2
+# pytest-asyncio==1.2.0
+pytest-cov==4.1.0
+
+# Additional Development Tools
+ipython==8.18.0

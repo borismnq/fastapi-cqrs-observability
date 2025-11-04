@@ -1,0 +1,46 @@
+[run]
+branch = True
+source = .
+omit =
+    .venv/*
+    */tests/*
+    */migrations/*
+    */__pycache__/*
+    */admin.py
+    */apps.py
+    */models.py
+    */urls.py
+    */wsgi.py
+    */asgi.py
+    */settings.py
+    */manage.py
+    */test_*.py
+    *__init__.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    def __str__
+    raise NotImplementedError
+    raise ImportError
+    if __name__ == .__main__.:
+    pass
+    raise AssertionError
+    raise NotImplemented
+    @abstractmethod
+    @property
+    @classmethod
+    @staticmethod
+    @abstractproperty
+    @abstractclassmethod
+    @abstractstaticmethod
+    @abc.abstractmethod
+    @abc.abstractproperty
+    @abc.abstractclassmethod
+    @abc.abstractstaticmethod
+    @pytest.fixture
+
+[html]
+directory = htmlcov
+title = Test Coverage Report
