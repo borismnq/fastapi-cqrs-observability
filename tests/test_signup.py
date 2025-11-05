@@ -132,7 +132,7 @@ def test_health_check(client):
     response = client.get("/health")
     assert response.status_code == 200
     assert response.json()["status"] == "healthy"
-    assert response.json()["service"] == "signup"
+    assert response.json()["service"] == "signup-service"
 
 
 def test_request_context_headers(client):
